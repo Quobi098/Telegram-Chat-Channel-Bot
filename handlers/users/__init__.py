@@ -1,5 +1,6 @@
 from .help import dp
 from .menu import dp
+from .inline import dp
 from .sending_cats import dp
 from .testing import dp
 from .start import dp

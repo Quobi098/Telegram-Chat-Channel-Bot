@@ -8,6 +8,9 @@ BOT_TOKEN = str(os.getenv("BOT_TOKEN"))
 admins = [
     1175657579
 ]
+allowed_users = [
+
+]
 
 channels = ["@demo_test_tg"]
 
