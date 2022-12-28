@@ -1,7 +1,5 @@
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters import Command
-
-from keyboards.cancel import cancel
 from loader import dp
 from aiogram import types
 
@@ -13,7 +11,7 @@ async def enter_test(message: types.Message):
     await message.answer("Вы начали тестирование. \n"
                          "Вопрос №1 \n\n"
                          "Вы часто занимаетесь бессмысленными делами "
-                         "(бесцельно блуждаете по интернету, клацаете пультом телевизора, просто смотрите в потолок)?", reply_markup=cancel)
+                         "(бесцельно блуждаете по интернету, клацаете пультом телевизора, просто смотрите в потолок)?")
 
     await Test.Q1.set()
 
